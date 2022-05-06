@@ -1,38 +1,439 @@
+@import url('http://fonts.cdnfonts.com/css/sf-pro-display');
+@import url('http://fonts.cdnfonts.com/css/svn-gilroy');
+
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex {
   display: flex;
-  flex-direction: column;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.nav-item {
+  width: 33%;
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 32px;
+  color: #174478;
+}
+
+.banner-btn {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  position: absolute;
+  bottom: 16.3%;
+  left: 7.5%;
+  width: 185px;
+
+  height: 56px;
+  background: #475dbd;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.14), 0px 1px 18px rgba(0, 0, 0, 0.12),
+    0px 3px 5px rgba(0, 0, 0, 0.2), inset 0px 4px 8px rgba(225, 248, 253, 0.1);
+  border-radius: 8px;
+
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.0125em;
+  color: #ffffff;
 }
 
-.App-link {
-  color: #61dafb;
+.name-category-product {
+  text-align: left;
+  font-family: 'SVN-Gilroy';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+  color: #174478;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.featured-gears-container {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.featured-gears-wrapper {
+  position: relative;
+  width: 23%;
+  height: 376px;
+}
+
+.featured-gears-item {
+  position: relative;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 335px;
+  width: 89%;
+  text-align: left;
+  background: #fbfbfb;
+  border-radius: 16px;
+}
+
+.title-featured-product {
+  padding-top: 24px;
+
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 44px;
+  letter-spacing: 0.0025em;
+  color: #174478;
+}
+
+.description-featured-product {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: #bac5cf;
+}
+
+.content-featured-product {
+  font-family: 'SVN-Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.0025em;
+  color: #121212;
+
+  margin-top: 24px;
+}
+
+.about-product-infor {
+  margin-left: 13px;
+
+  font-family: 'SVN-Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: 0.015em;
+  color: #174478;
+}
+
+.more-details-btn {
+  margin-top: 16px;
+
+  font-family: 'SVN-Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.0125em;
+  color: #174478;
+}
+
+.footer-card {
+  height: 16px;
+  width: 89%;
+  background: #74b4c8;
+  border-radius: 0px 0px 16px 16px;
+}
+
+.best-seller {
+  width: 92px;
+  height: 22px;
+  position: absolute;
+  top: 0px;
+  right: -10px;
+
+  background: #a1fcc6;
+  border-radius: 20px;
+
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: left;
+  letter-spacing: 0.004em;
+  color: #174478;
+}
+
+.best-seller-elipse-icon {
+  width: 19.83px;
+  height: 20.83px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(
+      25.2deg,
+      rgba(15, 106, 35, 0.4) -2.11%,
+      rgba(255, 255, 255, 0) 35.05%
+    ),
+    linear-gradient(
+      223.03deg,
+      rgba(255, 255, 255, 0.6) -0.21%,
+      rgba(255, 255, 255, 0) 28.83%
+    ),
+    linear-gradient(
+      289.71deg,
+      rgba(73, 239, 58, 0.2) -2.73%,
+      rgba(235, 242, 234, 0) 108.59%
+    ),
+    #59d48e;
+
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.12),
+    0px 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+}
+
+/*Điều chỉnh vị trí ảnh sản phẩm */
+
+.featured-product-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.featured-product-image-2 {
+  position: absolute;
+  bottom: -7%;
+  right: 0;
+}
+
+.featured-product-image-3 {
+  position: absolute;
+  bottom: -3%;
+  right: 0;
+}
+
+.featured-product-image-4 {
+  position: absolute;
+  bottom: -3%;
+  right: 0;
+}
+
+.banner2-container {
+  padding-top: 124px;
+  position: relative;
+}
+
+.banner2-image {
+  position: absolute;
+  bottom: 0;
+  left: 3%;
+}
+
+.banner2-btn {
+  position: absolute;
+  top: 53%;
+  right: 0;
+}
+
+.banner2-wrapper {
+  background: #e8f8f7;
+  height: 360px;
+}
+
+.banner2-content {
+  padding-left: 630px;
+  padding-top: 64px;
+}
+
+.bring-content-banner2 {
+  display: flex;
+  align-items: flex-end;
+  height: 80px;
+
+  font-family: 'SVN-Gilroy';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 104px;
+  text-align: center;
+  letter-spacing: -0.015em;
+  color: #121212;
+}
+
+.to-content-banner2 {
+  display: flex;
+  align-items: center;
+  height: 82px;
+
+  font-family: 'SVN-Gilroy';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 104px;
+  text-align: center;
+  letter-spacing: -0.015em;
+  color: #121212;
+}
+
+.visual-content-banner2 {
+  height: 32px;
+  display: flex;
+  align-items: flex-end;
+
+  font-family: 'SVN-Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: 0.0025em;
+  color: #121212;
+}
+
+.real-content-banner2 {
+  height: 35px;
+
+  text-align: end;
+  font-family: 'SVN-Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: 0.0025em;
+  color: #121212;
+}
+
+.banner-paragrahp {
+  font-family: 'SVN-Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #121212;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.005em;
+
+  width: 70%;
+  text-align: left;
+  margin-top: 45px;
+}
+
+.content-left-container {
+  margin-right: 40px;
+}
+
+.content-right-container {
+  margin-left: 40px;
+}
+
+.content-left-container,
+.content-right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.game-seller-card {
+}
+
+.game-seller-content-container {
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+}
+
+.game-seller-content-left {
+  text-align: left;
+  padding-left: 16px;
+  padding-top: 14px;
+  background: #eefbfa;
+}
+
+.game-seller-content-right {
+  text-align: left;
+  padding: 30px 12px;
+  background: #fbfbfb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-seller-content-right > img {
+  margin-top: 25px;
+}
+
+.game-seller-content-right > img:first-child {
+  margin-top: 0;
+}
+
+.game-seller-image {
+  width: 100%;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.game-seller-name {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.0015em;
+  color: #174478;
+}
+
+.game-seller-hastag {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.004em;
+  color: #74b4c8;
+}
+
+.game-seller-star-feedbacks {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.015em;
+  color: #74b4c8;
+
+  margin-top: 16px;
+}
+
+.game-seller-content {
+  font-family: 'SVN-Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.0025em;
+  color: #121212;
+
+  margin-top: 17px;
+}
+
+.game-seller-card-footer {
+  background: #475dbd;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.14), 0px 1px 18px rgba(0, 0, 0, 0.12),
+    0px 3px 5px rgba(0, 0, 0, 0.2), inset 0px 4px 8px rgba(225, 248, 253, 0.1);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+
+  height: 40px;
 }
