@@ -1,8 +1,7 @@
-@import url('http://fonts.cdnfonts.com/css/sf-pro-display');
-@import url('http://fonts.cdnfonts.com/css/svn-gilroy');
+@import url("http://fonts.cdnfonts.com/css/sf-pro-display");
+@import url("http://fonts.cdnfonts.com/css/svn-gilroy");
 
 .App {
-  text-align: center;
 }
 .flex {
   display: flex;
@@ -14,7 +13,7 @@
 
 .nav-item {
   width: 33%;
-  font-family: 'SF Pro Display';
+  font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 500;
   font-size: 26px;
@@ -38,7 +37,7 @@
     0px 3px 5px rgba(0, 0, 0, 0.2), inset 0px 4px 8px rgba(225, 248, 253, 0.1);
   border-radius: 8px;
 
-  font-family: 'SF Pro Display';
+  font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -49,7 +48,7 @@
 
 .name-category-product {
   text-align: left;
-  font-family: 'SVN-Gilroy';
+  font-family: "SVN-Gilroy";
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -84,7 +83,7 @@
 .title-featured-product {
   padding-top: 24px;
 
-  font-family: 'SF Pro Display';
+  font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 600;
   font-size: 34px;
@@ -94,7 +93,7 @@
 }
 
 .description-featured-product {
-  font-family: 'SF Pro Display';
+  font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -104,7 +103,7 @@
 }
 
 .content-featured-product {
-  font-family: 'SVN-Gilroy';
+  font-family: "SVN-Gilroy";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -120,7 +119,7 @@
 .about-product-infor {
   margin-left: 13px;
 
-  font-family: 'SVN-Gilroy';
+  font-family: "SVN-Gilroy";
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -132,7 +131,7 @@
 .more-details-btn {
   margin-top: 16px;
 
-  font-family: 'SVN-Gilroy';
+  font-family: "SVN-Gilroy";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -158,7 +157,7 @@
   background: #a1fcc6;
   border-radius: 20px;
 
-  font-family: 'SF Pro Display';
+  font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -254,7 +253,7 @@
   align-items: flex-end;
   height: 80px;
 
-  font-family: 'SVN-Gilroy';
+  font-family: "SVN-Gilroy";
   font-style: normal;
   font-weight: 700;
   font-size: 96px;
@@ -269,7 +268,7 @@
   align-items: center;
   height: 82px;
 
-  font-family: 'SVN-Gilroy';
+  font-family: "SVN-Gilroy";
   font-style: normal;
   font-weight: 700;
   font-size: 96px;
@@ -284,7 +283,7 @@
   display: flex;
   align-items: flex-end;
 
-  font-family: 'SVN-Gilroy';
+  font-family: "SVN-Gilroy";
   font-style: normal;
   font-weight: 600;
   font-size: 34px;
@@ -298,7 +297,7 @@
   height: 35px;
 
   text-align: end;
-  font-family: 'SVN-Gilroy';
+  font-family: "SVN-Gilroy";
   font-style: normal;
   font-weight: 600;
   font-size: 34px;
@@ -309,7 +308,7 @@
 }
 
 .banner-paragrahp {
-  font-family: 'SVN-Gilroy';
+  font-family: "SVN-Gilroy";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -381,7 +380,7 @@
 }
 
 .game-seller-name {
-  font-family: 'SF Pro Display';
+  font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -391,7 +390,7 @@
 }
 
 .game-seller-hastag {
-  font-family: 'SF Pro Display';
+  font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -401,7 +400,7 @@
 }
 
 .game-seller-star-feedbacks {
-  font-family: 'SF Pro Display';
+  font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -415,7 +414,7 @@
 }
 
 .game-seller-content {
-  font-family: 'SVN-Gilroy';
+  font-family: "SVN-Gilroy";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -436,4 +435,31 @@
   border-bottom-right-radius: 16px;
 
   height: 40px;
+
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.0125em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.game-seller-container {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.game-seller-card {
+  width: 20%;
+}
+
+.location-container {
+  height: 275px;
+  background: #fbfbfb;
 }
