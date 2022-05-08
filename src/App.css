@@ -1,8 +1,13 @@
-@import url("http://fonts.cdnfonts.com/css/sf-pro-display");
-@import url("http://fonts.cdnfonts.com/css/svn-gilroy");
+@import url('http://fonts.cdnfonts.com/css/sf-pro-display');
+@import url('http://fonts.cdnfonts.com/css/svn-gilroy');
 
 .App {
 }
+
+.darkModeBackground {
+  background: #121212;
+}
+
 .flex {
   display: flex;
 }
@@ -12,8 +17,10 @@
 }
 
 .nav-item {
+  text-align: center;
+
   width: 33%;
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 500;
   font-size: 26px;
@@ -37,7 +44,7 @@
     0px 3px 5px rgba(0, 0, 0, 0.2), inset 0px 4px 8px rgba(225, 248, 253, 0.1);
   border-radius: 8px;
 
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -48,7 +55,7 @@
 
 .name-category-product {
   text-align: left;
-  font-family: "SVN-Gilroy";
+  font-family: 'SVN-Gilroy';
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -83,7 +90,7 @@
 .title-featured-product {
   padding-top: 24px;
 
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 600;
   font-size: 34px;
@@ -93,7 +100,7 @@
 }
 
 .description-featured-product {
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -103,7 +110,7 @@
 }
 
 .content-featured-product {
-  font-family: "SVN-Gilroy";
+  font-family: 'SVN-Gilroy';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -119,7 +126,7 @@
 .about-product-infor {
   margin-left: 13px;
 
-  font-family: "SVN-Gilroy";
+  font-family: 'SVN-Gilroy';
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -131,7 +138,7 @@
 .more-details-btn {
   margin-top: 16px;
 
-  font-family: "SVN-Gilroy";
+  font-family: 'SVN-Gilroy';
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -157,7 +164,7 @@
   background: #a1fcc6;
   border-radius: 20px;
 
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -253,7 +260,7 @@
   align-items: flex-end;
   height: 80px;
 
-  font-family: "SVN-Gilroy";
+  font-family: 'SVN-Gilroy';
   font-style: normal;
   font-weight: 700;
   font-size: 96px;
@@ -268,7 +275,7 @@
   align-items: center;
   height: 82px;
 
-  font-family: "SVN-Gilroy";
+  font-family: 'SVN-Gilroy';
   font-style: normal;
   font-weight: 700;
   font-size: 96px;
@@ -283,7 +290,7 @@
   display: flex;
   align-items: flex-end;
 
-  font-family: "SVN-Gilroy";
+  font-family: 'SVN-Gilroy';
   font-style: normal;
   font-weight: 600;
   font-size: 34px;
@@ -297,7 +304,7 @@
   height: 35px;
 
   text-align: end;
-  font-family: "SVN-Gilroy";
+  font-family: 'SVN-Gilroy';
   font-style: normal;
   font-weight: 600;
   font-size: 34px;
@@ -308,7 +315,7 @@
 }
 
 .banner-paragrahp {
-  font-family: "SVN-Gilroy";
+  font-family: 'SVN-Gilroy';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -380,7 +387,7 @@
 }
 
 .game-seller-name {
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -390,7 +397,7 @@
 }
 
 .game-seller-hastag {
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -400,7 +407,7 @@
 }
 
 .game-seller-star-feedbacks {
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -414,7 +421,7 @@
 }
 
 .game-seller-content {
-  font-family: "SVN-Gilroy";
+  font-family: 'SVN-Gilroy';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -436,7 +443,7 @@
 
   height: 40px;
 
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -462,4 +469,99 @@
 .location-container {
   height: 275px;
   background: #fbfbfb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location-wrapper {
+  display: flex;
+  width: 83%;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.location-title {
+  font-family: 'SVN-Gilroy';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 72px;
+  letter-spacing: -0.005em;
+  color: #121212;
+}
+
+.location-input {
+  width: 500px;
+  border-bottom: 4px solid #74b4c8;
+  padding-bottom: 8px;
+}
+
+.location-input > Input {
+  border: none;
+  background: #fbfbfb;
+
+  font-family: 'SVN-Gilroy';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 44px;
+  letter-spacing: 0.0025em;
+  color: #bac5cf;
+  padding-left: 0px;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 39%;
+}
+
+.footer-title {
+  margin-top: 24px;
+
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 56px;
+  color: #174478;
+}
+
+.footer-description {
+  margin-top: 18px;
+
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.0015em;
+  color: #bac5cf;
+}
+
+.footer-contact-social-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-contact-social-wrapper {
+  width: 42%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-contact-navbar {
+  margin-top: 32px;
+
+  display: flex;
+  justify-content: space-between;
+
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 32px;
+  color: #174478;
 }
