@@ -1,11 +1,48 @@
 @import url('http://fonts.cdnfonts.com/css/sf-pro-display');
-@import url('http://fonts.cdnfonts.com/css/svn-gilroy');
+@import url('http://fonts.cdnfonts.com/css/svn-gilroy?styles=55332,55331');
 
-.App {
+:root {
+  --background: #ffffff;
+  --text-primary: #174478;
+
+  --featured-gears-card-background: #fbfbfb;
+  --featured-gears-card-description: #bac5cf;
+  --featured-gears-card-content: #121212;
+  --featured-gears-card-footer: #74b4c8;
+
+  --banner-text-primary: #121212;
+  --banner1-background: #e8f8f7;
+
+  --game-seller-card-hastag: #74b4c8;
+
+  --game-seller-card-content-left-background: #eefbfa;
+  --game-seller-card-content-right-background: #fbfbfb;
+
+  --border: #74b4c8;
 }
 
-.darkModeBackground {
-  background: #121212;
+[data-theme='dark'] {
+  --background: #121212;
+  --text-primary: #ffffff;
+
+  --featured-gears-card-background: #1f2022;
+  --featured-gears-card-description: #98b0b4;
+  --featured-gears-card-content: #ebf9f9;
+  --featured-gears-card-footer: #426e8a;
+
+  --banner-text-primary: #ebf9f9;
+  --banner1-background: #303030;
+
+  --game-seller-card-hastag: #426e8a;
+
+  --game-seller-card-content-left-background: #282829;
+  --game-seller-card-content-right-background: #1f2022;
+
+  --border: #426e8a;
+}
+
+.App {
+  background: var(--background);
 }
 
 .flex {
@@ -25,7 +62,7 @@
   font-weight: 500;
   font-size: 26px;
   line-height: 32px;
-  color: #174478;
+  color: var(--text-primary);
 }
 
 .banner-btn {
@@ -60,7 +97,7 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 32px;
-  color: #174478;
+  color: var(--text-primary);
 }
 
 .featured-gears-container {
@@ -71,7 +108,6 @@
 
 .featured-gears-wrapper {
   position: relative;
-  width: 23%;
   height: 376px;
 }
 
@@ -83,8 +119,9 @@
   height: 335px;
   width: 89%;
   text-align: left;
-  background: #fbfbfb;
-  border-radius: 16px;
+  background: var(--featured-gears-card-background);
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 
 .title-featured-product {
@@ -96,7 +133,7 @@
   font-size: 34px;
   line-height: 44px;
   letter-spacing: 0.0025em;
-  color: #174478;
+  color: var(--text-primary);
 }
 
 .description-featured-product {
@@ -106,7 +143,7 @@
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.01em;
-  color: #bac5cf;
+  color: var(--featured-gears-card-description);
 }
 
 .content-featured-product {
@@ -118,7 +155,7 @@
   display: flex;
   align-items: center;
   letter-spacing: 0.0025em;
-  color: #121212;
+  color: var(--featured-gears-card-content);
 
   margin-top: 24px;
 }
@@ -132,7 +169,7 @@
   font-size: 10px;
   line-height: 16px;
   letter-spacing: 0.015em;
-  color: #174478;
+  color: var(--text-primary);
 }
 
 .more-details-btn {
@@ -144,13 +181,13 @@
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.0125em;
-  color: #174478;
+  color: var(--text-primary);
 }
 
 .footer-card {
   height: 16px;
   width: 89%;
-  background: #74b4c8;
+  background: var(--featured-gears-card-footer);
   border-radius: 0px 0px 16px 16px;
 }
 
@@ -246,7 +283,7 @@
 }
 
 .banner2-wrapper {
-  background: #e8f8f7;
+  background: var(--banner1-background);
   height: 360px;
 }
 
@@ -267,7 +304,7 @@
   line-height: 104px;
   text-align: center;
   letter-spacing: -0.015em;
-  color: #121212;
+  color: var(--banner-text-primary);
 }
 
 .to-content-banner2 {
@@ -282,7 +319,7 @@
   line-height: 104px;
   text-align: center;
   letter-spacing: -0.015em;
-  color: #121212;
+  color: var(--banner-text-primary);
 }
 
 .visual-content-banner2 {
@@ -297,7 +334,7 @@
   line-height: 44px;
   text-align: center;
   letter-spacing: 0.0025em;
-  color: #121212;
+  color: var(--banner-text-primary);
 }
 
 .real-content-banner2 {
@@ -311,7 +348,7 @@
   line-height: 44px;
   text-align: center;
   letter-spacing: 0.0025em;
-  color: #121212;
+  color: var(--banner-text-primary);
 }
 
 .banner-paragrahp {
@@ -320,7 +357,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #121212;
+  color: var(--banner-text-primary);
 
   display: flex;
   align-items: center;
@@ -359,13 +396,13 @@
   text-align: left;
   padding-left: 16px;
   padding-top: 14px;
-  background: #eefbfa;
+  background: var(--game-seller-card-content-left-background);
 }
 
 .game-seller-content-right {
   text-align: left;
   padding: 30px 12px;
-  background: #fbfbfb;
+  background: var(--game-seller-card-content-right-background);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -382,6 +419,7 @@
 
 .game-seller-image {
   width: 100%;
+  object-fit: cover;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
 }
@@ -393,7 +431,7 @@
   font-size: 20px;
   line-height: 28px;
   letter-spacing: 0.0015em;
-  color: #174478;
+  color: var(--text-primary);
 }
 
 .game-seller-hastag {
@@ -403,7 +441,7 @@
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.004em;
-  color: #74b4c8;
+  color: var(--game-seller-card-hastag);
 }
 
 .game-seller-star-feedbacks {
@@ -415,7 +453,7 @@
   display: flex;
   align-items: center;
   letter-spacing: 0.015em;
-  color: #74b4c8;
+  color: var(--game-seller-card-hastag);
 
   margin-top: 16px;
 }
@@ -429,7 +467,7 @@
   display: flex;
   align-items: center;
   letter-spacing: 0.0025em;
-  color: #121212;
+  color: var(--banner-text-primary);
 
   margin-top: 17px;
 }
@@ -453,7 +491,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ffffff;
+  color: var(--text-primary);
 }
 
 .game-seller-container {
@@ -468,7 +506,7 @@
 
 .location-container {
   height: 275px;
-  background: #fbfbfb;
+  background: var(--game-seller-card-content-right-background);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -488,18 +526,17 @@
   font-size: 60px;
   line-height: 72px;
   letter-spacing: -0.005em;
-  color: #121212;
+  color: var(--banner-text-primary);
 }
 
 .location-input {
   width: 500px;
-  border-bottom: 4px solid #74b4c8;
+  border-bottom: 4px solid var(--border);
   padding-bottom: 8px;
 }
 
 .location-input > Input {
-  border: none;
-  background: #fbfbfb;
+  background: var(--game-seller-card-content-right-background);
 
   font-family: 'SVN-Gilroy';
   font-style: normal;
@@ -526,7 +563,7 @@
   font-weight: 600;
   font-size: 48px;
   line-height: 56px;
-  color: #174478;
+  color: var(--text-primary);
 }
 
 .footer-description {
@@ -563,5 +600,18 @@
   font-weight: 500;
   font-size: 26px;
   line-height: 32px;
-  color: #174478;
+  color: var(--text-primary);
+}
+
+.row-container-footer {
+  margin-top: 75px;
+  border-top: 4px solid var(--border);
+}
+
+.slick-slider .slick-slide {
+  margin-right: 30px;
+}
+
+.slick-track {
+  width: 1920px !important;
 }
